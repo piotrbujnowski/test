@@ -1,0 +1,1 @@
+print ("paper, rock, scissors")
