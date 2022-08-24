@@ -1,3 +1,2 @@
-print ("paper, rock, scissors")
-choices = ["Rock", "Paper", "Scissors"]
-computer = random.choice(choices)
+player = input('write your name')
+player = input(' %s: choose paper, rock or scissors: '% player)
