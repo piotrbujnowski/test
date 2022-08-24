@@ -5,7 +5,7 @@ choices = ["Rock", "Paper", "Scissors"]
 computer = random.choice(choices)
 
 print("Rock, paper or scissors?")
-   choice = int(input)
+   choice = (input)
     if input == computer
    print ("It's a tie!")
 
