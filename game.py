@@ -1,33 +1,24 @@
 import random
 
+player = input('write your name: ')
+player_choice = input(' %s: choose paper, rock or scissors: '% player)
+possible_actions = ["rock", "paper", "scissors"]
+bot_action = random.choice(possible_actions)
 
-choices = ["Rock", "Paper", "Scissors"]
-computer = random.choice(choices)
-
-print("Rock, paper or scissors?")
-   choice = int(input)
-    if input == computer
-   print ("It's a tie!")
-
-   elif input = "Paper" and computer = "Scissors"
-   print ("I win.")
-
-   elif input = "Paper" and computer = "Rock"
-   print ("Again!")
-
-   elif input = "Scissors" and computer = "Paper"
-   print ("Ok, this time it's yours")
-
-   elif input = "Scissors" and computer = "Rock"
-   print ("I win.")
-
-   elif input = "Rock" and computer = "Paper"
-   print ("I got you! Oh wait, it's yours)
-
-   elif input = "Rock" and computer = "Scissors"
-   ("We'll see how you do next time")
-
-
-   #(That's it?)
-   #mamy trzy zycia, jak ktoś wygra: print("Ur dumber than me anyway.")  print("What? I cannot hear you")
-   #typ komendy: wygrana/przegrana
+if player_choice == bot_action:
+    print("It's a tie!")
+elif player_choice == "rock":
+    if bot_action == "scissors":
+        print("You win!")
+    else:
+        print("You lose.")
+elif player_choice == "paper":
+    if bot_action == "rock":
+        print("You win!")
+    else:
+        print("You lose.")
+elif player_choice == "scissors":
+    if bot_action == "paper":
+        print("You win!")
+    else:
+        print("You lose.")
