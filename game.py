@@ -6,7 +6,7 @@ possible_actions = ["rock", "paper", "scissors"]
 bot_action = random.choice(possible_actions)
 
 if player_choice == bot_action:
-    print(f"Both players selected {player_choice}. It's a tie!")
+    print("It's a tie!")
 elif player_choice == "rock":
     if bot_action == "scissors":
         print("You win!")
