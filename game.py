@@ -4,7 +4,7 @@ player = input('write your name: ')
 player_choice = input(' %s: choose paper, rock or scissors: '% player)
 possible_actions = ["rock", "paper", "scissors"]
 bot_action = random.choice(possible_actions)
-print("You chose {player_choice}, computer chose {bot_action}.")
+print("You chose" (player_choice), "computer chose" (bot_action)".")
 
 if player_choice == bot_action:
     print("It's a tie!")
