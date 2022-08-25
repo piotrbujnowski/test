@@ -1,11 +1,24 @@
 import random
+
 player = input('write your name: ')
-playerchoice = input(' %s: choose paper, rock or scissors: '% player)
+player_choice = input(' %s: choose paper, rock or scissors: '% player)
+possible_actions = ["rock", "paper", "scissors"]
+bot_action = random.choice(possible_actions)
 
-choices = ["paper","rock","scissors"]
-botchoice = random.choice(choices)
-
-if int(playerchoice) == 'paper' and int(botchoice) == 'rock':
-    print('you win!')
-elif int(playerchoice) == 'paper' and int(botchoice) == 'scissors':
-    print('you loose!')
+if player_choice == bot_action:
+    print(f"Both players selected {player_choice}. It's a tie!")
+elif player_choice == "rock":
+    if bot_action == "scissors":
+        print("You win!")
+    else:
+        print("You lose.")
+elif player_choice == "paper":
+    if bot_action == "rock":
+        print("You win!")
+    else:
+        print("You lose.")
+elif player_choice == "scissors":
+    if bot_action == "paper":
+        print("You win!")
+    else:
+        print("You lose.")
