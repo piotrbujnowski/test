@@ -23,5 +23,3 @@ elif player_choice == "scissors":
         print("You win!")
     else:
         print("You lose.")
-
-        cokolwiek123
