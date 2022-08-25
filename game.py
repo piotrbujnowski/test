@@ -24,4 +24,4 @@ elif player_choice == "scissors":
     else:
         print("You lose.")
 
-        test #test 
+        cokolwiek123
