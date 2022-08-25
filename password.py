@@ -1,7 +1,7 @@
 import random
 import string
 
-def pass_gen(size = 8, chars=string.ascii_letters + string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation):
+def pass_gen(size, chars=string.ascii_letters + string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation):
 
     return ''.join(random.choice(chars) for _ in range(size))
 
